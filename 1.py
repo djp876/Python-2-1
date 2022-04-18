@@ -77,3 +77,38 @@ b=m%n
 print("Mixed Fraction :",a,b,"/",n)
 
 ##9. Matrix manuplation1.	Program to determine number of days in a given month
+
+
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+
+Y = [[5,8,1],
+    [6,7,3],
+    [4,5,9]]
+
+result = [[0,0,0],
+         [0,0,0],
+         [0,0,0]]
+result1 = [[0,0,0],
+         [0,0,0],
+         [0,0,0]]
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
+print("addition of matrices")
+for r in result:
+    print(r)
+for i in range(len(X)):
+    for j in range(len(Y[0])):
+        for k in range(len(Y)):
+            result1[i][j]+=X[i][k]*Y[k][j]
+print("multiplication of matrices")
+for z in result1 :
+    print(z)
+for i in range(len(X)):
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] - Y[i][j]
+print("subtraction of matrices")
+for r in result:
+    print(r)
